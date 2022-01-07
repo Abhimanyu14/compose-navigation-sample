@@ -17,6 +17,5 @@ fun MyApp() {
 
     MyAppView(
         activityViewModel = activityViewModel,
-        viewModelStoreOwner=viewModelStoreOwner,
     )
 }
