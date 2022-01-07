@@ -1,0 +1,56 @@
+buildscript {
+    ext {
+        compose_version = '1.0.5'
+
+        // Hilt
+        hiltVersion = "2.39"
+
+        // Hilt
+        hiltPluginVersion = "2.29.1-alpha"
+
+        // Hilt
+        hiltPluginVersion = "2.29.1-alpha"
+
+        // Hilt lifecycle viewmodel
+        hiltLifecycleViewModelVersion = "1.0.0-alpha03"
+
+        // Hilt compiler
+        hiltCompilerVersion = "1.0.0"
+
+        // Jetpack compose
+        jetpackComposeVersion = "1.0.5"
+
+        // Jetpack compose constraint layout
+        jetpackComposeConstraintLayoutVersion = "1.0.0-rc02"
+
+        // Jetpack compose integration with activities
+        jetpackComposeActivityIntegrationVersion = "1.4.0"
+
+        // Jetpack compose integration with view models
+        jetpackComposeViewModelIntegrationVersion = "2.4.0"
+
+        // Jetpack compose navigation
+        jetpackComposeNavigationVersion = "2.4.0-rc01"
+
+        // Jetpack compose hilt navigation
+        jetpackComposeHiltNavigationVersion = "1.0.0-rc01"
+
+        // Jetpack compose material theme adapter
+        jetpackComposeMaterialThemeAdapterVersion = "1.1.2"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+
+        // Hilt
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltPluginVersion"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
